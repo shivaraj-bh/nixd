@@ -377,6 +377,9 @@ let
                     home_manager = {
                         expr = '(builtins.getFlake "/tmp/NixOS_Home-Manager").homeConfigurations."user@hostname".options',
                     },
+                    services-flake = {
+                        expr = '(builtins.getFlake "/Users/shivaraj/oss/services-flake/example/simple").debug.options',
+                    },
                 },
             },
         },
